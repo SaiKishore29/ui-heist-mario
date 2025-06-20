@@ -23,9 +23,6 @@ export default function Mario() {
 
   useEffect(()=>{
     setTimeout(()=>{
-      console.log(marioPosition);
-      console.log(isJumping);
-      console.log(marioPosition == 190 && !isJumping);
       if(marioPosition == 190 && !isJumping)
       {
         setGameOver(true);
