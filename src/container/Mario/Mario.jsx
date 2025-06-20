@@ -35,7 +35,7 @@ export default function Mario() {
     setMarioPosition((prev) => {
       const next = prev + 38;
       if (next >= 342) setGameWon(true);
-      if( next == 190 && !isJumping) setGameOver(true);
+      if( (next == 190 || next == 114 || next == 266) && !isJumping) setGameOver(true);
       return next;
     });
   },[powerOn,gameWon,gameOver,isJumping]);
@@ -44,7 +44,7 @@ export default function Mario() {
     if (!powerOn || gameWon || gameOver) return;
     setMarioPosition((prev) => {
       const next = prev - 38;
-      if( next == 190 && !isJumping) setGameOver(true);
+      if( (next == 190 || next == 114 || next == 266) && !isJumping) setGameOver(true);
       if(prev == 0)
         return prev;
       return next;
@@ -59,7 +59,7 @@ export default function Mario() {
     setTimeout(() => {
       setIsJumping(false);
       setMarioPosition((prev) => {
-        if (prev === 190) {
+        if (prev === 190 || prev == 114 || prev == 266) {
           setGameOver(true);
         }
         return prev;

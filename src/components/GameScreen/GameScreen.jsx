@@ -23,20 +23,17 @@ export default function GameScreen({powerOn,marioPosition,gameWon,handleStart,ha
             <div className={style["mario-world"]}>
               {[...Array(10)].map((_, idx) => (
                 <div key={idx} className={style['world-tile']}>
-                  {
-                    idx == 5 && <img src={object} alt='obj' className={style['object']}/>
-                  }
-                  {
-                    idx == 9 && <img src={flag} alt='flag' className={style["flag"]}/>
-                  }
-
+                  {idx == 3 && <img src={object} alt='obj' className={style['object']}/>}
+                  {idx==5 &&  <img src={object} alt='obj' className={style['object']}/>}
+                  {idx==7 &&  <img src={object} alt='obj' className={style['object']}/>}
+                  {idx == 9 && <img src={flag} alt='flag' className={style["flag"]}/>}
                 </div>
               ))}
 
               <img src={mario} alt='mario' 
               className={style["mario-mini"]}
               style={{
-                transform: `translate(${marioPosition}px, ${isJumping ? '-40px' : '22px'})`,
+                transform: `translate(${marioPosition}px, ${isJumping ? '-40px' : '24px'})`,
                 transition: 'transform 0.3s ease'
               }}/>
 
