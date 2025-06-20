@@ -23,9 +23,7 @@ export default function GameScreen({powerOn,marioPosition,gameWon,handleStart,ha
             <div className={style["mario-world"]}>
               {[...Array(10)].map((_, idx) => (
                 <div key={idx} className={style['world-tile']}>
-                  {idx == 3 && <img src={object} alt='obj' className={style['object']}/>}
-                  {idx==5 &&  <img src={object} alt='obj' className={style['object']}/>}
-                  {idx==7 &&  <img src={object} alt='obj' className={style['object']}/>}
+                  {(idx == 3 || idx==5 || idx==7) && <img src={object} alt='obj' className={style['object']}/>}
                   {idx == 9 && <img src={flag} alt='flag' className={style["flag"]}/>}
                 </div>
               ))}
