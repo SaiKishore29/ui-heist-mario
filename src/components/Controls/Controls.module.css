@@ -1,0 +1,57 @@
+.controls {
+    background-color: #a89072;
+    padding: 16px;
+    border-radius: 12px;
+    color: white;
+    width: 280px;
+  }
+  
+  .controls-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .dpad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    justify-items: center;
+    margin-bottom: 24px;
+  }
+  
+  .btn {
+    background-color: white;
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .volume-title {
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  
+  .volume-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .volume-bar {
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .volume-level {
+    width: 60%;
+    height: 100%;
+    background-color: green;
+  }

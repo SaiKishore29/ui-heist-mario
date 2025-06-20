@@ -1,0 +1,27 @@
+/* MarioGameUI.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cfc2a8;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .game-box {
+    display: flex;
+    background-color: #7b6c5f;
+    border-radius: 16px;
+    padding: 24px;
+    gap: 16px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (min-width: 768){
+    .game-box{
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
+  

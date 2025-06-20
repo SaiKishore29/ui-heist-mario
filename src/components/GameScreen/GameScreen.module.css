@@ -1,0 +1,129 @@
+.screen {
+    padding: 16px;
+    border-radius: 12px;
+    color: white;
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .screen-content {
+    position: relative;
+    background-color: black;
+    border-radius: 15px;
+    flex: 1;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .mario-large {
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    width: 70px;
+    margin-bottom: 16px;
+  }
+  
+  .screen-title {
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .screen-subtitle {
+    margin-top: 8px;
+  }
+  
+  .screen-footer {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 24px;
+  }
+
+  .mario-world{
+    display: flex;
+    width: 100%;
+  }
+  .world-tile{
+    width: 10%;
+    position: relative;
+    top: 20px;
+  }
+  
+  .mario-mini {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+  }
+
+
+  .land-scape{
+    width: 100%;
+    position: relative;
+    background-color: transparent;
+  }
+
+  .object{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 5px;
+  }
+  
+  .flag {
+    width: 32px;
+    height: 32px;
+  }
+
+  .game-success, .game-over{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .game-over-img{
+    width: 150px;
+    background-color: transparent;
+  }
+  
+  .button-row {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 24px;
+    background-color: #7b6c5f;
+    width: 100%;
+  }
+  
+  .start-btn {
+    background-color: #28a745;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+  }
+  
+  .power-btn {
+    background-color: #333;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+  }
+  
+  .stop-btn {
+    background-color: #dc3545;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+  }
